@@ -1,0 +1,151 @@
+/* styles.css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #121212 0%, #1e1e1e 100%);
+    color: #e0e0e0;
+    line-height: 1.6;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.cv-container {
+    max-width: 1000px;
+    margin: 30px auto;
+    background: rgba(30, 30, 30, 0.9);
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5), 
+                0 0 15px rgba(255, 255, 255, 0.05);
+    display: flex;
+    overflow: hidden;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.text-content {
+    padding: 40px;
+    flex: 1;
+    text-align: left;
+}
+
+.photo-content {
+    flex: 0 0 300px;
+    background: rgba(20, 20, 20, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-left: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.profile-photo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: grayscale(20%) contrast(110%);
+}
+
+.name-title {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: #ffffff;
+    text-align: left;
+    font-weight: 700;
+}
+
+.name-title span {
+    color: #4dabf7;
+    background: linear-gradient(90deg, #4dabf7, #228be6);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    text-shadow: 0 0 10px rgba(77, 171, 247, 0.3);
+}
+
+.decoration-line {
+    padding: 1px 35px 1px 35px;
+    height: 4px;
+    width: 100px;
+    background: linear-gradient(90deg, hsl(0, 0%, 100%), #ffffff);
+    margin: 25px 0;
+    border-radius: 2px;
+}
+
+
+.btn{
+   border: 1px solid #4dabf7; 
+   font-size: 16px;
+   color: #4badf7;
+   transition: all .55s ease-in-out;
+   text-overflow: uppercase;
+   padding: 16px 35px 16px 35px;
+   font-weight: 600;
+   text-decoration: none;
+   display: inline-block;
+   line-height: 1.4;
+   border-radius: 10px;
+}
+
+.job-title, .personal-description {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+    color: #bdbdbd;
+    text-align: left;
+}
+
+.decoration-line {
+    padding: 1px 35px 1px 35px;
+    height: 4px;
+    width: 100px;
+    background: linear-gradient(90deg, hsl(0, 0%, 100%), #ffffff);
+    margin: 25px 0;
+    border-radius: 2px;
+}
+
+.contact-info {
+    margin-top: 30px;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    font-size: 1rem;
+    justify-content: flex-start;
+}
+
+.contact-item i {
+    width: 30px;
+    color: #4dabf7;
+    font-size: 1.2rem;
+    text-align: left;
+}
+
+.contact-item span {
+    color: #e0e0e0;
+    transition: all 0.3s ease;
+}
+
+.contact-item:hover span {
+    color: #ffffff;
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.3);
+}
+
+@media (max-width: 768px) {
+    .cv-container {
+        flex-direction: column;
+    }
+    
+    .photo-content {
+        flex: 0 0 250px;
+        border-left: none;
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+    }
+    
+    body {
+        padding: 10px;
+    }
+}
